@@ -6,8 +6,9 @@
 </head>
 <body>
     <h1>Result</h1>
-    <p th:text="'id: ' + ${greeting.id}"/>
-    <p th:text="'content: ' + ${greeting.content}"/>
-    <a href="/greeting">Submit another message</a>
+    <p th:text="'id: ' + ${user.id}"/>
+    <p th:text="'content: ' + ${user.name}"/>
+    <p th:text="'gender: ' + ${user.gender}"
+    <a href="/user">Submit another user</a>
 </body>
 </html>
