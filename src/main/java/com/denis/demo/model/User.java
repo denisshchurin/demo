@@ -1,9 +1,16 @@
 package com.denis.demo.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
+
 public class User {
     private long id;
     private String name;
     private String gender;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate birthday;
 
     public String getGender() {
         return gender;
@@ -27,5 +34,13 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
     }
 }
