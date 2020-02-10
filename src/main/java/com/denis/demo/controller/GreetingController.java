@@ -1,5 +1,6 @@
 package com.denis.demo.controller;
 
+import com.denis.demo.model.Greeting;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
